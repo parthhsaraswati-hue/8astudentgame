@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spin & Win</title>
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/images/prize1.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card" aria-labelledby="title">
+      <h1 id="title">Spin &amp; Win</h1>
+      <div class="wheel-wrap">
+        <div id="aria-live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+        <div class="wheel" id="wheel" role="img" aria-label="Prize wheel with 8 slices"></div>
+        <div class="pointer" aria-hidden="true"></div>
+      </div>
+      <button id="spinBtn" class="spin-btn" aria-label="Spin the wheel (Space or Enter)">SPIN</button>
+      <div class="meta">
+        <div>Plays: <span id="playsCount">0</span></div>
+        <div>Last 10: <span id="historyList"></span></div> 
+      </div>
+    </section>
+  </main>
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc" hidden>
+    <div class="modal-content">
+      <button class="close" id="closeModal" aria-label="Close dialog">&times;</button>
+      <div class="prize-icon" id="modalIcon" aria-hidden="true"></div>
+      <h2 id="modalTitle">You got:</h2>
+      <p id="modalPrize" class="prize-name"></p>
+      <p id="modalDesc" class="prize-msg">Explain this topic !!</p>
+      <button id="playAgain" class="play-again">Play Again</button>
+    </div>
+  </div>
+  <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+  <script src="app.js"></script>
+</body>
+</html>

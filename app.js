@@ -1,16 +1,16 @@
 const PRIZES = [
-  { label: "Prize 1", img: "assets/images/chrome (1).png", color: "#ff7675" },
-  { label: "Prize 2", img: "assets/images/google (1).png", color: "#74b9ff" },
+  { label: "Prize 1", img: "chrome (1).png", color: "#ff7675" },
+  { label: "Prize 2", img: "google (1).png", color: "#74b9ff" },
   {
     label: "Prize 3",
-    img: "assets/images/google-calendar.png",
+    img: "google-calendar.png",
     color: "#55efc4",
   },
-  { label: "Prize 4", img: "assets/images/google-drive.png", color: "#ffeaa7" },
-  { label: "Prize 5", img: "assets/images/google-play.png", color: "#a29bfe" },
-  { label: "Prize 6", img: "assets/images/communicatio.png", color: "#fdcb6e" },
-  { label: "Prize 7", img: "assets/images/logo.png", color: "#81ecec" },
-  { label: "Prize 8", img: "assets/images/sheets.png", color: "#fab1a0" },
+  { label: "Prize 4", img: "google-drive.png", color: "#ffeaa7" },
+  { label: "Prize 5", img: "google-play.png", color: "#a29bfe" },
+  { label: "Prize 6", img: "communicatio.png", color: "#fdcb6e" },
+  { label: "Prize 7", img: "logo.png", color: "#81ecec" },
+  { label: "Prize 8", img: "sheets.png", color: "#fab1a0" },
 ];
 
 const wheelEl = document.getElementById("wheel");
